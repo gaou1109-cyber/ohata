@@ -1,5 +1,6 @@
 body{
     text-align:center;
+    width:100%;
 }
 .visible{
     visibility: visible;
@@ -15,4 +16,15 @@ body{
 .target{
     font-weight:bold;
     color:red;
+}
+p{
+    font-size:15px;
+}
+@media screen and (max-width: 750px) {
+    button{
+        width:30%;
+    }
+    select{
+        width:30%;
+    }
 }
