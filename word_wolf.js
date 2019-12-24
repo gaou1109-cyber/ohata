@@ -39,6 +39,7 @@ function select_menber(){
     count = 1;
     document.getElementById('player_view').className ="visible";
     document.getElementById('last_select').className = "hidden";
+    document.getElementById('result').className = "hidden";
 }
 //はいを押すと「game_start」を表示
 function game_start(){
