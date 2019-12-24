@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ワードウルフ</title>
+<style type="text/css">
+</style>
+<link href="wolf.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="headTitle">ワードウルフへようこそ</h1>
+    <div id="player_view">
+    <p>まずは参加人数を選んでください</p>
+        <select id="number_player">
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        </select>人
+        <button onclick="num_selext()">決定</button>
+    </div>
+    <div id="title_01" class="hidden">
+        <p>まずはプレイヤー1の方のみ画面を見て、以下の次へを押してください</p>
+        <button onclick="play_first()">次へ</button>
+    </div>
+    <div id="title_02" class="hidden">
+        <p>プレイヤー<span id="player_num"></span>のお題は<span id="player_title" class="target"></span>です。<br>覚えたら、以下の「次へ」を押してください</p>
+        <button onclick="play_title()">次へ</button>
+    </div>
+    <div id="title_03" class="hidden">
+        <p>次にプレイヤー<span id="player_num_next"></span>の方のみ画面を見て、<br>以下の「次へ」を押してください</p>
+        <button onclick="play_first()">次へ</button>
+    </div>
+    <div id="last_select" class="hidden">
+        <p>条件が全てそろいました。ゲームを開始してもよろしいでしょうか？</p>
+        <button onclick="game_start()">はい</button><button onclick="select_menber()">最初に戻る</button>
+    </div>
+    <div id="game" class="hidden">
+        <p id="game_start">ゲームを開始します。<br>トークを開始してください</p>
+        <button onclick="finish_game()">ゲームを終了する</button>
+    </div>
+    <div id="result" class="hidden">
+        <p>今回の人狼はプレイヤー<span id="player" class="target"></span>でワードは<span id="word" class="target"></span>でした</p>
+        <button onclick="select_menber()"></button>
+    </div>
+    <script type="text/javascript" src="word_wolf.js"></script>
+    <script type="text/javascript" src="word.js"></script>
+    <noscript>JavaScriptが利用できないブラウザです</noscript>
+    </body>

@@ -1,0 +1,18 @@
+body{
+    text-align:center;
+}
+.visible{
+    visibility: visible;
+    height:auto;
+}
+.hidden{
+    visibility: hidden;
+    height:0px;
+}
+.hidden p{
+    margin:0px;
+}
+.target{
+    font-weight:bold;
+    color:red;
+}
