@@ -10,7 +10,7 @@ function play_first(){
     document.getElementById('title_03').className = "hidden";
     player_sum = document.getElementById('number_player').value;
     if(count == 1){
-        number_rand = Math.floor(Math.random() * player_sum + 1);
+        number_rand = Math.floor(Math.random() * (Number(player_sum) + 1));
         title_rand = Math.floor(Math.random() * 12);
     }
     document.getElementById('title_02').className ="visible";
