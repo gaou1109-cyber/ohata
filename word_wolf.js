@@ -11,6 +11,9 @@ function play_first(){
     player_sum = document.getElementById('number_player').value;
     if(count == 1){
         number_rand = Math.floor(Math.random() * (Number(player_sum) + 1));
+        if(number_rand == 0){
+            number_rand = 1;
+        }
         title_rand = Math.floor(Math.random() * 12);
     }
     document.getElementById('title_02').className ="visible";
