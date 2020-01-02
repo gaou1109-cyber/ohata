@@ -14,7 +14,7 @@ function play_first(){
         if(number_rand == 0){
             number_rand = 1;
         }
-        title_rand = Math.floor(Math.random() * Object.keys(question).length);
+        title_rand = Math.floor(Math.random() * (Object.keys(question).length + 1));
     }
     document.getElementById('title_02').className ="visible";
     document.getElementById('player_num').innerText = count;

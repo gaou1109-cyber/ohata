@@ -1,10 +1,12 @@
 body{
     text-align:center;
     width:100%;
-    background: url("img/wolf_back.png");
-    background-position: 25% 75%;
+    background: url("img/wolf.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+h1{
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif !important;
 }
 p{
     background:#ffffff;
