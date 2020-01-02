@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-    <h1 class="h2">ワードウルフへようこそ</h1>
+    <h1 class="h2 mt-2 mb-2">ワードウルフへようこそ</h1>
     <div id="player_view">
     <p>まずは参加人数を選んでください</p>
         <select id="number_player" class="form-control-lg">
@@ -30,11 +30,11 @@
         <button class="btn btn-primary" onclick="play_first()">次へ</button>
     </div>
     <div id="title_02" class="hidden">
-        <p>プレイヤー<span id="player_num"></span>のお題は<span id="player_title" class="target"></span>です。<br>覚えたら、以下の「次へ」を押してください</p>
+        <p>プレイヤー<span id="player_num"></span>のお題は<br><span id="player_title" class="target"></span>です。<br>覚えたら、「次へ」を押してください</p>
         <button class="btn btn-primary" onclick="play_title()">次へ</button>
     </div>
     <div id="title_03" class="hidden">
-        <p>次にプレイヤー<span id="player_num_next"></span>の方のみ画面を見て、<br>以下の「次へ」を押してください</p>
+        <p>次にプレイヤー<span id="player_num_next"></span>の方のみ画面を見て、<br>「次へ」を押してください</p>
         <button class="btn btn-primary" onclick="play_first()">次へ</button>
     </div>
     <div id="last_select" class="hidden">
@@ -46,7 +46,7 @@
         <button class="btn btn btn-primary" onclick="finish_game()">ゲームを終了する</button>
     </div>
     <div id="result" class="hidden">
-        <p>今回の人狼はプレイヤー<span id="player" class="target"></span>でワードは<span id="word" class="target"></span>でした</p>
+        <p>今回の人狼はプレイヤー<span id="player" class="target"></span>で、<br>ワードは<span id="word" class="target"></span>でした</p>
         <button class="btn btn-primary last" onclick="select_menber()">もう一度ゲームを行う</button>
     </div>
     <script type="text/javascript" src="word_wolf.js"></script>
