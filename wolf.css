@@ -7,6 +7,7 @@ body{
 }
 h1{
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif !important;
+    color:red;
 }
 p{
     background:#ffffff;
