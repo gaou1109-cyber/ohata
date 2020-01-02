@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-    <h1 id="headTitle">ワードウルフへようこそ</h1>
+    <h1 class="h2">ワードウルフへようこそ</h1>
     <div id="player_view">
     <p>まずは参加人数を選んでください</p>
         <select id="number_player" class="form-control-lg">
@@ -23,7 +23,7 @@
             <option value=9>9</option>
             <option value=10>10</option>
         </select>人
-        <button class="btn btn-primary" onclick="num_selext()">決定</button>
+        <button class="btn btn-primary ml-2" onclick="num_selext()">決定</button>
     </div>
     <div id="title_01" class="hidden">
         <p>まずはプレイヤー1の方のみ画面を見て、以下の次へを押してください</p>
@@ -38,8 +38,8 @@
         <button class="btn btn-primary" onclick="play_first()">次へ</button>
     </div>
     <div id="last_select" class="hidden">
-        <p>条件が全てそろいました。ゲームを開始してもよろしいでしょうか？</p>
-        <button class="btn btn btn-primary" onclick="game_start()">はい</button><button class="btn-light" onclick="select_menber()">最初に戻る</button>
+        <p>条件が全てそろいました。<br>ゲームを開始してもよろしいでしょうか？</p>
+        <button class="btn btn btn-primary" onclick="game_start()">はい</button><button class="btn btn-light ml-2" onclick="select_menber()">最初に戻る</button>
     </div>
     <div id="game" class="hidden">
         <p id="game_start">ゲームを開始します。<br>トークを開始してください</p>
@@ -47,7 +47,7 @@
     </div>
     <div id="result" class="hidden">
         <p>今回の人狼はプレイヤー<span id="player" class="target"></span>でワードは<span id="word" class="target"></span>でした</p>
-        <button class="btn btn-primary" onclick="select_menber()">もう一度ゲームを行う</button>
+        <button class="btn btn-primary last" onclick="select_menber()">もう一度ゲームを行う</button>
     </div>
     <script type="text/javascript" src="word_wolf.js"></script>
     <script type="text/javascript" src="word.js"></script>
